@@ -15,11 +15,13 @@ public class EnemyShooter : MonoBehaviour
 
     [SerializeField] private GameObject powerUp;
     [SerializeField] private Transform reference;
+    private Animator anim;
 
     void Start()
     {
         spawn = FindFirstObjectByType<ManagerSpawner>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         StartCoroutine(shoot());
     }
 
@@ -56,14 +58,15 @@ public class EnemyShooter : MonoBehaviour
     IEnumerator shoot()
 
     {
-
+       
         while (true)
         {
             yield return new WaitForSeconds(timeBetweenShots);
+            anim.SetTrigger("shoot"); 
+            yield return new WaitForSeconds(0.5f); 
             Instantiate(bullet, bulletSpawner.position, bulletSpawner.rotation);
-            //Esta es la funcion de disparo del enemigo, por si la ocupas para lo de la animacion
         }
-    
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

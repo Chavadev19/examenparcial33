@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundCheckRadius;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] bool isGrounded;
+    private bool isMoving;
+    private Animator anim;
 
     
 
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         ammoLeft = 5;
         canShoot = true;
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -52,6 +55,11 @@ public class PlayerMovement : MonoBehaviour
             ammoLeft = 0;
     }
 
+    void LateUpdate()
+    {
+        HandleAnimations();
+    }
+
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -59,12 +67,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        float horizontalInput = Input.GetAxis("ControlHorizontal");
+        float horizontalInput = Input.GetAxis("Horizontal");
 
         //No estoy seguro, pero creo que aqui esta lo que pudiera estar causando que contigo el player se siga, porque el input es diferente de 0
         if (horizontalInput != 0)
         {
             //Por aqui iria la animacion de movimiento
+            isMoving = true;
 
             transform.Translate(Vector3.right * horizontalInput * moveSpeed * Time.deltaTime);
 
@@ -77,6 +86,14 @@ public class PlayerMovement : MonoBehaviour
                 Flip();
             }
         }
+        else
+        {
+            isMoving = false;
+        }
+    }
+    private void HandleAnimations()
+    {
+        anim.SetBool("IsMoving", isMoving);
     }
 
     private void Jump()
@@ -103,16 +120,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("ShootControl") && canShoot && ammoLeft > 0)
         {
-            SpawnObject();
-            StartCoroutine(ShotCooldown());
+            anim.SetTrigger("Shoot");
         }
+    }
+    
+    public void ShootAnim()
+    {
+        SpawnObject();
+        StartCoroutine(ShotCooldown());
     }
 
     private void SpawnObject()
     {
         // Esta es la funcion de disparar, aqui iria lo que active la animacion, aqui o en el Shoot que esta arribita, como prefieras
         GameObject instantiatedObject = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
-
+        instantiatedObject.transform.localScale = new Vector3(facingRight ? instantiatedObject.transform.localScale.x : -instantiatedObject.transform.localScale.x, instantiatedObject.transform.localScale.y, instantiatedObject.transform.localScale.z);
         ammoLeft -= 1;
 
         
