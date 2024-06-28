@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1c411e520377ec46beaaa30fb62bfdb
+guid: f1f09e29429d9e34aaa01e3a9ecc6927
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,76 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gould hit_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 3
-        width: 27
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e64f37f207d4b8b498135034175e0796
-      internalID: -807630070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gould hit_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 3
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d01a109b0dca4ff409b016f49244d94e
-      internalID: -70919016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gould hit_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 3
-        width: 27
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9553b3281b6c3142a8bd3438b873e2c
-      internalID: 1473410747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gould hit_3
+      name: Play_0
       rect:
         serializedVersion: 2
         x: 97
-        y: 3
-        width: 27
-        height: 26
+        y: 296
+        width: 261
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0184804fcc8e624383a133f4e0d52c1
-      internalID: -1473833974
+      spriteID: f8de6e9f697e5f343be6cd4626ba7c84
+      internalID: 1648285336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_4
+      name: Play_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 3
-        width: 28
-        height: 23
+        x: 121
+        y: 117
+        width: 248
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,29 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f6e2b03f1950604fb4f3c6ba48ff85e
-      internalID: -1412599517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gould hit_5
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 3
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59116c0f4d0ac964f84c2fd6ebe498d3
-      internalID: 1197992968
+      spriteID: 0edef931e4967ac449ae36982f6e2a61
+      internalID: 1815124008
       vertices: []
       indices: 
       edges: []
@@ -233,12 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gould hit_0: -807630070
-      Gould hit_1: -70919016
-      Gould hit_2: 1473410747
-      Gould hit_3: -1473833974
-      Gould hit_4: -1412599517
-      Gould hit_5: 1197992968
+      Play_0: 1648285336
+      Play_1: 1815124008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

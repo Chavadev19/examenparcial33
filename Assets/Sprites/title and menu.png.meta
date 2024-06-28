@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1c411e520377ec46beaaa30fb62bfdb
+guid: 045cf19c871d3ce49804c921a64203b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gould hit_0
+      name: title and menu_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 27
-        height: 23
+        x: 124
+        y: 513
+        width: 808
+        height: 383
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e64f37f207d4b8b498135034175e0796
-      internalID: -807630070
+      spriteID: 67e347ffeeb224349a5f87b0d16cf9ff
+      internalID: 1432510392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_1
+      name: title and menu_6
       rect:
         serializedVersion: 2
-        x: 35
-        y: 3
-        width: 26
-        height: 24
+        x: 1316
+        y: 627
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d01a109b0dca4ff409b016f49244d94e
-      internalID: -70919016
+      spriteID: b7406b3063d7dbd42b83ae71ef8fa4c0
+      internalID: 1580167013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_2
+      name: title and menu_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 3
-        width: 27
-        height: 24
+        x: 1170
+        y: 206
+        width: 250
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9553b3281b6c3142a8bd3438b873e2c
-      internalID: 1473410747
+      spriteID: 5c74c24ae11854f44a01239aed28deaa
+      internalID: 696441493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_3
+      name: title and menu_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 3
-        width: 27
-        height: 26
+        x: 1195
+        y: 397
+        width: 217
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0184804fcc8e624383a133f4e0d52c1
-      internalID: -1473833974
+      spriteID: 5311cffc110b5ea47baab5c6e36cdb81
+      internalID: -1389297771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_4
+      name: title and menu_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 3
-        width: 28
-        height: 23
+        x: 1218
+        y: 574
+        width: 149
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f6e2b03f1950604fb4f3c6ba48ff85e
-      internalID: -1412599517
+      spriteID: e17c9b2be2c6e1c45acee97aa1f7c318
+      internalID: -265075245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gould hit_5
+      name: title and menu_4
       rect:
         serializedVersion: 2
-        x: 164
-        y: 3
-        width: 26
-        height: 19
+        x: 1204
+        y: 726
+        width: 181
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59116c0f4d0ac964f84c2fd6ebe498d3
-      internalID: 1197992968
+      spriteID: 965153f4b02e193498ba5544b10ec98c
+      internalID: 820143896
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gould hit_0: -807630070
-      Gould hit_1: -70919016
-      Gould hit_2: 1473410747
-      Gould hit_3: -1473833974
-      Gould hit_4: -1412599517
-      Gould hit_5: 1197992968
+      title and menu_0: 1432510392
+      title and menu_1: 696441493
+      title and menu_10: -2014331584
+      title and menu_11: 1201159725
+      title and menu_12: -279376341
+      title and menu_13: 794223266
+      title and menu_14: 1849233195
+      title and menu_15: 1363837218
+      title and menu_16: -1068624406
+      title and menu_17: -328935347
+      title and menu_18: 322468709
+      title and menu_19: -12158525
+      title and menu_2: -1389297771
+      title and menu_3: -265075245
+      title and menu_4: 820143896
+      title and menu_5: 1350061961
+      title and menu_6: 1580167013
+      title and menu_7: -262799919
+      title and menu_8: -328255836
+      title and menu_9: 1508211566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
