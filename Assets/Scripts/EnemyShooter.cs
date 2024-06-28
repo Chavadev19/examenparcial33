@@ -42,6 +42,8 @@ public class EnemyShooter : MonoBehaviour
         }
         
     }
+
+    //En ambas funciones puse que se detenga en la X = 7, entonces ahi es cuando se detienen por si quieres cambiar la animacion
     private void MoveFromLeft()
     {
         if (gameObject.transform.position.x < -7)
@@ -52,11 +54,14 @@ public class EnemyShooter : MonoBehaviour
     }
 
     IEnumerator shoot()
+
     {
+
         while (true)
         {
             yield return new WaitForSeconds(timeBetweenShots);
             Instantiate(bullet, bulletSpawner.position, bulletSpawner.rotation);
+            //Esta es la funcion de disparo del enemigo, por si la ocupas para lo de la animacion
         }
     
     }

@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("ExamLevel");
+        SceneManager.LoadScene("MainLevel");
     }
     public void MainMenu()
     {
@@ -56,4 +56,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Defeat");
     }
 
+    public void Exit()
+    {
+        Debug.Log("Cerrando el juego...");
+        Application.Quit();
+    }
 }

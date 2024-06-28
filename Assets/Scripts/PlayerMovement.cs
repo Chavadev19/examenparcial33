@@ -61,9 +61,11 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("ControlHorizontal");
 
+        //No estoy seguro, pero creo que aqui esta lo que pudiera estar causando que contigo el player se siga, porque el input es diferente de 0
         if (horizontalInput != 0)
         {
-            
+            //Por aqui iria la animacion de movimiento
+
             transform.Translate(Vector3.right * horizontalInput * moveSpeed * Time.deltaTime);
 
             if (horizontalInput > 0 && !facingRight)
@@ -91,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
         // Cambia la dirección en la que el personaje está mirando.
         facingRight = !facingRight;
 
-        // Multiplica la escala x del personaje por -1.
+        // Multiplica la escala x del personaje por -1, cone sto la animacion se gira solita tons namas hay que acomodarla bien.
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
@@ -108,15 +110,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void SpawnObject()
     {
-        // Instanciar el objeto en la posición y rotación del objeto de referencia
+        // Esta es la funcion de disparar, aqui iria lo que active la animacion, aqui o en el Shoot que esta arribita, como prefieras
         GameObject instantiatedObject = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
 
         ammoLeft -= 1;
 
-        // Obtener el Rigidbody2D del objeto instanciado
+        
         Rigidbody2D rb = instantiatedObject.GetComponent<Rigidbody2D>();
 
-        // Verificar si el objeto instanciado tiene un Rigidbody2D
+        
         if (rb != null)
         {
             if (facingRight)
@@ -143,7 +145,6 @@ public class PlayerMovement : MonoBehaviour
         ammoLeft = +10;
         yield return new WaitForSeconds(3);
         shotsCooldown = shotsCooldown * 3;
-        ammoLeft -= 10;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
